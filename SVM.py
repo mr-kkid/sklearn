@@ -5,6 +5,7 @@ from sklearn.cross_validation import train_test_split
 from sklearn.linear_model import Perceptron
 from sklearn.metrics import accuracy_score
 from sklearn.svm import SVC
+import plot_decision_regions
 
 
 sc=StandardScaler()
