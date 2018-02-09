@@ -1,3 +1,5 @@
+#encoding=UTF-8
+#支持向量机
 from sklearn import datasets
 import numpy as np
 from sklearn.preprocessing import  StandardScaler
@@ -27,6 +29,11 @@ SVM.fit(X_train_std,Y_train)
 
 Y_pred=SVM.predict(X_test_std)
 
+X_combined_std=np.vstack((X_train_std,X_test_std))
+Y_combined=np.hstack((Y_train,Y_test))
+plot_decision_regions.plot_decision_regions(X=X_combined_std,Y=Y_combined,classifier=SVM,test_idx=range(105,150))
+plt.show()
+
 print  accuracy_score(Y_test,Y_pred)
 
 SVM=SVC(kernel='rbf',gamma=2.0,C=1.0,random_state=0)
@@ -35,7 +42,7 @@ SVM.fit(X_train_std,Y_train)
 Y_pred=SVM.predict(X_test_std)
 
 X_combined_std=np.vstack((X_train_std,X_test_std))
-Y_combined=np.hstack((Y_train,Y_test))
+Y_combined=np.hstack((Y_train,Y_test)) 
 plot_decision_regions.plot_decision_regions(X=X_combined_std,Y=Y_combined,classifier=SVM,test_idx=range(105,150))
 plt.show()
 

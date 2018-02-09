@@ -1,3 +1,5 @@
+#encoding=UTF-8
+#逻辑回归
 from sklearn import datasets
 import numpy as np
 from sklearn.preprocessing import  StandardScaler
