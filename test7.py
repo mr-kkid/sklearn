@@ -3,8 +3,8 @@
 import pandas as pd
 from io import StringIO
 from sklearn.preprocessing import Imputer#插入空值
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import OneHotEncoder#d独热编码  用DataFrame创建数据  用独热编码  方便
+from sklearn.preprocessing import LabelEncoder#顺序编码
+from sklearn.preprocessing import OneHotEncoder#独热编码  用DataFrame创建数据  用独热编码  方便
 
 csv_data='''A,B,C,D
             1.0,2.0,3.0,4.0
