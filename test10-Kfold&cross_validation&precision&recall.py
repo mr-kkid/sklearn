@@ -39,7 +39,6 @@ print scores
 
 print '\n'
 #encoding=UTF-8
-#流水线
 from sklearn import datasets
 import numpy as np
 from sklearn.preprocessing import  StandardScaler
